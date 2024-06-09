@@ -47,22 +47,18 @@ def create_e ():
 def create_g ():
     create(v1_v2_e, kol_v)
 
-# Создаём главное окно приложения
 root = Tk()
 root.title("Моё приложение")
 root.geometry('600x400')
 
-# Создаём надпись
 label_kol_v = Label(root, text="Введите количество вершин: ")
 label_create = Label(root, text="Создание связей между вершинами")
 
-# Создаём текстовое поле
 text_filed_v = EntryWithPlaceholder(root, )
 text_filed_v1 = EntryWithPlaceholder(root, 'Вершина 1') 
 text_filed_v2 = EntryWithPlaceholder(root, 'Вершина 2')
 text_filed_e = EntryWithPlaceholder(root, 'Вес')
 
-# Создаём кнопку
 btn_add_v = Button(root, text="Добавить", command=kol_vo_v)
 btn_create = Button(root, text="Создать связь", command=create_e)
 btn_create_graph = Button(root, text="Создать граф", command=create_g)
@@ -79,7 +75,5 @@ text_filed_e.pack()
 btn_create.pack()
 btn_create_graph.pack()
 
-
-# Запускаем главный цикл окна
 root.mainloop()
 
